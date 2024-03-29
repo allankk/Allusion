@@ -48,17 +48,17 @@ const exifFields: Record<string, ExifField> = {
       return <ExternalLink url={url}>{url}</ExternalLink>;
     },
   },
-  ImageDescription: { label: 'Description', modifiable: true },
+  //ImageDescription: { label: 'Description', modifiable: true },
   Parameters: { label: 'Parameters' },
-  Copyright: { label: 'Copyright', modifiable: true },
-  Make: { label: 'Camera Manufacturer' },
-  Model: { label: 'Camera Model' },
-  Megapixels: { label: 'Megapixels' },
-  ExposureTime: { label: 'Exposure Time' },
-  FNumber: { label: 'F-stop' },
-  FocalLength: { label: 'Focal Length' },
-  GPSLatitude: { label: 'GPS Latitude' },
-  GPSLongitude: { label: 'GPS Longitude' },
+  //Copyright: { label: 'Copyright', modifiable: true },
+  //Make: { label: 'Camera Manufacturer' },
+  //Model: { label: 'Camera Model' },
+  //Megapixels: { label: 'Megapixels' },
+  //ExposureTime: { label: 'Exposure Time' },
+  //FNumber: { label: 'F-stop' },
+  //FocalLength: { label: 'Focal Length' },
+  //GPSLatitude: { label: 'GPS Latitude' },
+  //GPSLongitude: { label: 'GPS Longitude' },
 };
 
 const exifTags = Object.keys(exifFields);

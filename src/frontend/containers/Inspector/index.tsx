@@ -4,6 +4,7 @@ import { observer } from 'mobx-react-lite';
 import { useStore } from '../../contexts/StoreContext';
 import FileTags from '../../components/FileTag';
 import ImageInfo from '../../components/ImageInfo';
+import ImageDescription from '../../components/ImageDescription';
 import { IconButton, IconSet } from 'widgets';
 import { shell } from 'electron';
 import { IS_PREVIEW_WINDOW } from 'common/window';
@@ -25,6 +26,18 @@ const Inspector = observer(() => {
   return (
     <aside id="inspector">
       <section>
+        <ImageDescription file={first} />
+      </section>
+      {/* Modifying state in preview window is not supported (not in sync updated in main window) */}
+      {!IS_PREVIEW_WINDOW && (
+        <section>
+          <header>
+            <h2>Tags</h2>
+          </header>
+          <FileTags file={first} />
+        </section>
+      )}
+      <section>
         <ImageInfo file={first} />
       </section>
       <section>
@@ -40,15 +53,6 @@ const Inspector = observer(() => {
           />
         </div>
       </section>
-      {/* Modifying state in preview window is not supported (not in sync updated in main window) */}
-      {!IS_PREVIEW_WINDOW && (
-        <section>
-          <header>
-            <h2>Tags</h2>
-          </header>
-          <FileTags file={first} />
-        </section>
-      )}
     </aside>
   );
 });

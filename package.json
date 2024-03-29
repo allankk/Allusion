@@ -1,7 +1,7 @@
 {
   "name": "allusion",
   "productName": "Allusion",
-  "version": "1.0.0-rc.10",
+  "version": "1.0.1-al",
   "description": "A tool for managing your visual library",
   "main": "build/main.bundle.js",
   "scripts": {
@@ -72,12 +72,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allusion-app/Allusion.git"
+    "url": "git+https://github.com/allankk/Allusion.git"
   },
   "author": "Allusion-App",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/allusion-app/Allusion/issues"
+    "url": "https://github.com/allank/Allusion/issues"
   },
   "homepage": "https://github.com/allusion-app/Allusion#readme",
   "devDependencies": {
